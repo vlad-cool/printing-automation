@@ -2,18 +2,20 @@
 from sys import argv
 from PIL import Image
 
+picture = Image.open(argv[1])
+width, height = picture.size
+
 if len(argv) >= 4:
     new_width = int(argv[2])
     new_height = int(argv[3])
 else:
-    new_width = 100
-    new_height = 150
+    new_width = width
+    new_height = height
+
+
 
 x = 0
 y = 0
-
-picture = Image.open(argv[1])
-width, height = picture.size
 
 print(width, height)
 

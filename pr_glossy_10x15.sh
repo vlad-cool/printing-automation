@@ -3,5 +3,5 @@ for file in "$@"
 do
     echo $file
     ./convert.py $file 100 150
-    ./print.sh tmp.png EPREMGLOSS 100x148mm
+    ./print.sh tmp.png EPREMGLOSS 100x148mm on
 done
